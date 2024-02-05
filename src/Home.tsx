@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -12,26 +13,19 @@ function Home() {
           <nav>
             <ul className="flex space-x-4 font-urbanist font-bold text-2xl tracking-wider">
               <li>
-                {" "}
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="mr-2 text-2xl"
-                />
-              </li>
-              <li>
-                <a href="#" className="hover:text-rose-200 mr-2">
+                <Link to="/" className="hover:text-orange-300 mr-2">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-stone-300 mr-2">
+                <Link to="/about" className="hover:text-orange-300 mr-2">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-200 mr-2">
+                <Link to="/projects" className="hover:text-orange-300 mr-2">
                   Projects
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -42,7 +36,9 @@ function Home() {
           <div className=" text-left font-urbanist font-medium tracking-[.1em]  ">
             <h1 className="text-7xl mb-3">Hello!</h1>
             <p className="text-7xl">I'm Sophia*</p>
-            <p className="text-lg mt-5">I am a Student</p>
+            <p className="text-xl mt-5 tracking-widest">
+              & This is my Portfolio
+            </p>
           </div>
         </div>
       </div>

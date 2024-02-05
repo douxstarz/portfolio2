@@ -4,11 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lightblue: "#f4f9ff",
-        lightpurple: "#fafbff",
-        creams: "#fffcfd",
-        pinks: "fff5fb",
-        greys: "f1f0f0",
+        coffee: "#967259",
       },
       fontFamily: {
         syne: ['"Syne"', "sans-serif"],
